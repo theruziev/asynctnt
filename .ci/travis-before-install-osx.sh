@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+set -e -x
 
 #brew update
 if [[ "${TARANTOOL_VERSION}" == "2_x" ]]; then
