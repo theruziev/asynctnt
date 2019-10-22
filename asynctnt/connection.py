@@ -113,7 +113,7 @@ class Connection:
             :param initial_read_buffer_size:
                     Initial and minimum size of read buffer in bytes.
                     Higher value means less reallocations, but higher
-                    memory usage.
+                    memory usage (default is 131072).
             :param loop:
                     Asyncio event loop to use
         """
