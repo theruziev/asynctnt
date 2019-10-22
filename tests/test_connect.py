@@ -80,7 +80,7 @@ class ConnectTestCase(BaseTarantoolTestCase):
 
         tnt = TarantoolSyncInstance(
             host='unix/',
-            port='/tmp/' + uuid.uuid4().hex,
+            port='/tmp/' + uuid.uuid4().hex + '.sock',
             console_host='127.0.0.1',
             applua=self.read_applua(),
             cleanup=self.TNT_CLEANUP

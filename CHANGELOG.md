@@ -1,3 +1,7 @@
+v1.1
+
+* Updated Cython to 0.29.13
+
 v1.0
 
 Breaking changes:

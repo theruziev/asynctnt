@@ -5,10 +5,10 @@ import os
 import typing
 from typing import Optional
 
-from asynctnt.exceptions import TarantoolDatabaseError, \
+from .exceptions import TarantoolDatabaseError, \
     ErrorCode, TarantoolNotConnectedError
-from asynctnt.iproto import protocol
-from asynctnt.log import logger
+from .iproto import protocol
+from .log import logger
 
 __all__ = (
     'Connection', 'connect', 'ConnectionState'
