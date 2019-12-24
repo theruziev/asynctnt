@@ -15,7 +15,7 @@ class ConnectTestCase(BaseTarantoolTestCase):
 
     async def test__connect(self):
         conn = asynctnt.Connection(host=self.tnt.host, port=self.tnt.port,
-                                   reconnect_timeout=0, loop=self.loop)
+                                   reconnect_timeout=0)
         self.assertEqual(conn.host, self.tnt.host)
         self.assertEqual(conn.port, self.tnt.port)
         self.assertIsNone(conn.username)
