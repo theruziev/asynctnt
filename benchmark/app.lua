@@ -41,6 +41,10 @@ box.once('access', function()
 
     local s = box.schema.create_space('tester')
     s:create_index('primary')
+    s:format({
+        { name = 'id', type = 'unsigned' },
+        { name = 'name', type = 'string' },
+    })
 end)
 
 local fiber = require('fiber')
